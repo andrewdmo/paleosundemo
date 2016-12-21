@@ -1,0 +1,25 @@
+.first {
+    width: 100%;
+    box-sizing: border-box;
+    height: 10%;
+}
+
+.second {
+
+}
+
+.third {
+
+}
+
+.menu {
+    display: inline-block;
+    width: 14%;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+* { border: 1px solid black; }
