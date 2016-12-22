@@ -1,25 +1,72 @@
+/*For build:*/
+* {
+    /*border: 1px solid black*/
+}
+
+html,
+body {
+    background: url("../img/page-1-home-compressed.jpg") no-repeat;
+    position: fixed;
+    /*linear-gradient(
+            to top right,
+            #073763,
+            lightsteelblue) no-repeat fixed;*/
+}
+
+textcopy,
+.textcopy {
+    font-size: 75%;
+}
+
 .first {
-    width: 100%;
+    max-width: 80%;
     box-sizing: border-box;
     height: 10%;
+    position: fixed;
 }
 
 .second {
-
+    height: 80%;
+    padding-top: 10%;
 }
 
 .third {
+    height: 20%;
+}
+
+middle,
+.middle {
+    margin: 0 auto;
 
 }
 
-.menu {
+menu,
+.menu,
+button-primary.menu,
+.button-primary.menu {
     display: inline-block;
-    width: 14%;
+    width: auto;
     transition: width 0.4s ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+    z-index: 2;
 
 }
 
 input[type=text]:focus {
     width: 100%;
+    z-index: 2;
 }
-* { border: 1px solid black; }
+
+/*.button.button-primary,
+button.button-primary {
+    width: 50%;
+}*/
+
+

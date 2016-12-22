@@ -1,9 +1,9 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" th:href="@{/css/normalize.css}" href="css/normalize.css"/>
-    <link rel="stylesheet" th:href="@{/css/skeleton.css}" href="css/skeleton.css"/>
-    <link rel="stylesheet" th:href="@{/css/paleoStyle.css}" href="css/paleoStyle.css"/>
+    <link rel="stylesheet" th:href="@{css/normalize.css}" href="css/normalize.css"/>
+    <link rel="stylesheet" th:href="@{css/skeleton.css}" href="css/skeleton.css"/>
+    <link rel="stylesheet" th:href="@{css/paleoStyle.css}" href="css/paleoStyle.css"/>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon-194x194.png" sizes="194x194">
     <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
@@ -14,35 +14,101 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container main">
     <div class="row first">
-        <div class="four columns">
-            <a href="/index.html" rel="#home" target="_blank">
-                <img src="/img/logo-white@2x.png" alt="PS logo"/>
+        <div class="container four columns">
+            <a href="index.html" rel="#home" target="_blank">
+                <img src="img/logo-white@2x.png" alt="PS logo" style="width: 100%"/>
             </a>
-        </div>
-        <div class="eight columns">
-            <div class="menu">
-                <button class="button-primary menu" alt="Home" name="home">Home</button>
-                <a href="/about.html" alt="About" name="about">About</a>
-                <a href="/portfolio.html" alt="Portfolio" name="portfolio">Portfolio</a>
-                <a href="/blog.html" alt="Blog" name="blog">Blog</a>
-                <a href="/archives.html" alt="Archives" name="about">Archives</a>
-                <a href="/contact.html" alt="Contact" name="about">Contact</a>
-                <input type="text" class="menu" alt="Search" name="search" placeholder="Search"/>
-            </div>
-        </div>
+        </div><!--container four columns-->
+
+        <div class="container eight columns">
+            <!--<div class="row 1A">-->
+            <!--<span>-->
+            <!--<button class="button-primary menu" alt="Home" name="home">Home</button>-->
+            <a href="about.html" class="menu" alt="About" name="about">About</a>
+            <a href="portfolio.html" class="menu" alt="Portfolio" name="portfolio">Portfolio</a>
+            <a href="blog.html" class="menu" alt="Blog" name="blog">Blog</a>
+            <a href="archives.html" class="menu" alt="Archives" name="archives">Archives</a>
+            <a href="contact.html" class="menu" alt="Contact" name="contact">Contact</a>
+            <input type="text" class="menu u-pull-right" alt="Search" name="search" placeholder="Search"/>
+            <!--</span>-->
+            <!--</div>&lt;!&ndash;row 1A&ndash;&gt;-->
+            <!--<div class="row 2A">-->
+            <!--<input type="text" class="menu u-pull-right" alt="Search" name="search" placeholder="Search"/>-->
+            <!--</div>&lt;!&ndash;row 2A&ndash;&gt;-->
+        </div><!--container eight columns-->
     </div><!--first row-->
 
-
     <div class="row second">
-        Row 2
-    </div>
+        <div class="container middle">
+            <div class="row 2A">
+                <div class="container six columns textcopy">
+                    <h6>We Give Life to Your Ideas</h6>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla nec
+                    risus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue. In at
+                    maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.
+                    <br/>
+                    Cras eget lorem tincidunt enim ullamcorper cursus. Maecenas tempus tortor a diam condimentum
+                    laoreet.
+                    <br/>
+                    <a href="portfolio.html" class="button button-primary">See Our Work</a>
+                </div><!--container six columns-->
+                <div class="container six columns">
+                    <img src="img/Vadim-Gromov-Responsive.jpg" class="u-max-full-width"/>
+                </div><!--container six columns-->
+            </div><!--row 2A-->
+
+            <div class="row 2B textcopy">
+                <div class="three columns">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla nec
+                    risus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue. In at
+                    maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.
+                    <br/>
+                    Cras eget lorem tincidunt enim ullamcorper cursus. Maecenas tempus tortor a diam condimentum
+                    laoreet.
+                </div>
+
+                <div class="three columns">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla nec
+                    risus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue. In at
+                    maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.
+                    <br/>
+                    Cras eget lorem tincidunt enim ullamcorper cursus. Maecenas tempus tortor a diam condimentum
+                    laoreet.
+                </div>
+
+                <div class="three columns">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla nec
+                    risus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue. In at
+                    maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.
+                    <br/>
+                    Cras eget lorem tincidunt enim ullamcorper cursus. Maecenas tempus tortor a diam condimentum
+                    laoreet.
+                </div>
+
+                <div class="three columns">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla nec
+                    risus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue. In at
+                    maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.
+                    <br/>
+                    Cras eget lorem tincidunt enim ullamcorper cursus. Maecenas tempus tortor a diam condimentum
+                    laoreet.
+                </div>
+
+            </div>
+
+            <div class="row 2C">
+
+            </div>
+        </div><!--container middle-->
+    </div><!--second row-->
+
     <div class="row third">
         Row 3
     </div>
 
 
-</div><!--container-->
+</div><!--container main-->
 </body>
 </html>
