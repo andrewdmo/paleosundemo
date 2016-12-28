@@ -18,10 +18,15 @@ body {
     height: 150vh;
 }
 
+.logo {
+    width: 75%;
+}
+
 .top {
     width: 90%;
     margin: 0 auto;
     position: fixed;
+    opacity: .9;
     z-index: 4;
 }
 
@@ -33,25 +38,23 @@ body {
 }
 
 .middle {
-
+    margin: 30% auto;
 }
 
 .second {
     height: 70%;
-    margin: 0 auto;
     position: relative;
 }
 
 .bottom {
     height: 20%;
-    position: relative;
+    margin: 10% auto 2% auto;
 }
 
 .third {
     height: 100%;
-    margin: 0 auto;
-    margin-bottom: 2%;
-
+    background-color: #505659;
+    color: #FFFFFF;
 }
 
 .textcopy {
@@ -60,21 +63,23 @@ body {
     overflow: scroll;
 }
 
-.textcopy.bottom {
-    background-color: #505659;
-    color: #FFFFFF;
-}
-
 @media (min-width: 400px) {
+    .container {
+        padding: 0 5%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
     .top {
         height: 10%;
         padding-top: 2%;
     }
 
-    .first {
-        max-width: 80%;
-        position: fixed;
-        z-index: 4;
+    .middle {
+        margin: 20% auto 0 auto;
     }
 
     .second {
@@ -84,12 +89,19 @@ body {
     }
 }
 
-/* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    .top {
-        height: 10%;
-        padding-top: 2%;
+    .container {
+        padding: 0 10%;
     }
+
+    .logo {
+        width: 100%;
+    }
+
+    .middle {
+        margin: 10% auto 0 auto;
+    }
+
 }
 
 .oneA {
@@ -128,17 +140,27 @@ menu:hover,
     transition: width 0.4s, opacity 0.4s, ease-in-out;
 }
 
+.searchfield:hover {
+    opacity: .9;
+    transition: opacity 0.4s;
+}
+
 .searchfield:focus {
     height: 30px;
     width: 100%;
-    opacity: .9;
     transition: width 0.4s, opacity 0.4s, ease-in-out;
+}
+
+.button,
+button {
+    width: 50%;
+    padding: 0;
 }
 
 .button.button-primary:hover,
 button.button-primary:hover {
     width: 100%;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s, background-color 0.4s ease-in-out;
     z-index: 2;
 
 }
