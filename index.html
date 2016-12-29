@@ -12,7 +12,10 @@
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>PaleoSun demo</title>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <style rel="text/css"> iframe[id^='twitter-widget-'] {
+        min-width: 0;
+        width: 100%;
+    } </style>
 
 </head>
 
@@ -142,9 +145,8 @@
 
     <div class="section bottom">
         <div class="row third">
-
-            <div class="three columns textcopy">
-                <h6 class="u-max-full-width">About Portfolio</h6>
+            <div class="three columns textcopy widget" style="margin-left: 0">
+                <h6 class="row u-max-full-width" style="text-align: center">About Portfolio</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio mi. Praesent eget nulla
                     necrisus maximus fermentum. Nulla nec pulvinar elit. Morbi a euismod metus, non vehicula augue.
                     In at maximus ex. Praesent nec neque in felis sagittis tincidunt sed sed neque.</p>
@@ -152,25 +154,30 @@
                     laoreet.</p>
             </div><!--three columns-->
 
-            <div class="three columns textcopy">
-                <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js"
-                        data-fw-param="?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Fpaleosun.com%2Fblog%2Frss%2F%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22height_by_article%22%3A%224%22%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2214%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22rounded%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on_mc%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22on%22%2C%22title_sentence%22%3A%22Recent%20Posts%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23505659%22%2C%22title_color%22%3A%22%23ffffff%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23505659%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%232e7ec8%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22100%22%2C%22item_description_color%22%3A%22%23ffffff%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22html%22%2C%22item_thumbnail%22%3A%22full%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D"></script>
+            <div class="three columns textcopy widget" style="margin-left: 0; overflow: hidden">
+                <h6 class="row u-max-full-width" style="text-align: center">Recent Posts</h6>
+                <script type="text/javascript" style="width: 100%" src="https://feed.mikle.com/js/fw-loader.js"
+                        data-fw-param="?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Fpaleosun.com%2Fblog%2Frss%2F%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22height_by_article%22%3A%224%22%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2214%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22rounded%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22off%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23505659%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%232e7ec8%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22150%22%2C%22item_description_color%22%3A%22%23b9b9b9%22%2C%22item_date%22%3A%22off%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%224%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D"></script>
             </div>
 
-            <div class="three columns textcopy">
-                <!--<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/PaleoSun">Tweets by PaleoSun</a>-->
+
+            <div class="three columns textcopy widget" style="margin-left: 0">
+                <h6 class="row u-max-full-width" style="text-align: center">Twitter Feed</h6>
                 <a class="twitter-timeline"
-                   href="https://twitter.com/paleosun">
+                   href="https://twitter.com/paleosun" data-chrome="transparent noborders noheader"
+                   data-tweet-limit="4">
                     Tweets by @PaleoSun
                 </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
-            <div class="three columns textcopy">
-                <a data-flickr-embed="true" data-context="true"
-                   href="https://www.flickr.com/photos/dailyville/5035781359"
-                   title="welcome to the biltmore estate"><img
-                        src="https://c8.staticflickr.com/5/4112/5035781359_69fa721406_q.jpg" width="100%" height=""
-                        alt="welcome to the biltmore estate"></a>
+            <div class="three columns textcopy widget" style="margin-left: 0">
+                <h6 class="row u-max-full-width" style="text-align: center">Flickr Gallery</h6>
+                <a data-flickr-embed="true" href="https://www.flickr.com/photos/128611323@N08/albums/72157672309956845"
+                   title="LRE Biltmore Owner&#x27;s Day 8-7-2016"><img
+                        src="https://c6.staticflickr.com/9/8583/28916575965_827258e534_m.jpg"
+                        style="margin: 0 auto; width: 100%"
+                        alt="LRE Biltmore Owner&#x27;s Day 8-7-2016"></a>
                 <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
             </div>
         </div><!--third row-->
